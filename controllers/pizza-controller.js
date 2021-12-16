@@ -29,7 +29,7 @@ const pizzaController = {
     .then(dbPizzaData => {
       // if no pizza is found, return 404
       if (!dbPizzaData) {
-      res.status(404).json({ message: 'No pizza found with this if!' });
+      res.status(404).json({ message: 'No pizza found with this id!' });
       return;
     }
     res.json(dbPizzaData);
